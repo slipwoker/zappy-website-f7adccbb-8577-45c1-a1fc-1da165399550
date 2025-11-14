@@ -1,0 +1,581 @@
+<!DOCTYPE html><html lang="he" dir="rtl"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>אודות הגר בן דוד — דולה ומדריכה להכנה ללידה</title>
+  <meta name="description" content="הכירו את הגר בן דוד - דולה מנוסה ומדריכה להכנה ללידה זוגית בישראל. ניסיון רב, גישה מקצועית ומרגשת לליווי הריון ולידה.">
+  <meta name="keywords" content="הגר בן דוד, דולה ללידה בישראל, הכנה ללידה, מדריכה ללידה, ליווי הריון">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512x512.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<style>
+/* Zappy Attribution Header Styles */
+.zappy-header {
+  position: static;
+  width: 100%;
+  background: white;
+  box-shadow: 0px 4px 19px 0px rgba(0,0,0,0.04);
+  padding: 16px 10px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: #4a4a4a;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 21px;
+}
+
+    .zappy-header p {
+      margin: 0;
+      padding: 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      white-space: nowrap;
+      display: inline-block;
+      vertical-align: baseline;
+      margin-bottom: 0 !important;
+    }
+
+.zappy-header .zappy-link {
+  font-weight: 700;
+  color: #4a4a4a;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.zappy-header .zappy-link:hover {
+  opacity: 0.7;
+}</style>
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
+    <!-- Mickidum Accessibility Toolbar -->
+    <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+<!-- Zappy Analytics -->
+<script>
+(function() {
+  'use strict';
+  
+  // Configuration
+  var config = {
+    websiteId: 'f7adccbb-8577-45c1-a1fc-1da165399550',
+    apiUrl: 'https://api.zappy5.com/api/analytics/track',
+    sessionDuration: 30 * 60 * 1000, // 30 minutes
+    visitorDuration: 30 * 24 * 60 * 60 * 1000, // 30 days
+    trackPageViews: true,
+    trackClicks: true,
+    trackFormSubmissions: true
+  };
+  
+  // Generate or retrieve persistent visitor ID (30 days)
+  function getVisitorId() {
+    var visitorKey = 'zappy_visitor_' + config.websiteId;
+    var visitor = null;
+    
+    try {
+      visitor = localStorage.getItem(visitorKey);
+      if (visitor) {
+        var visitorData = JSON.parse(visitor);
+        var now = Date.now();
+        
+        // Check if visitor ID is still valid (30 days)
+        if (now - visitorData.created < config.visitorDuration) {
+          // Update last seen timestamp
+          visitorData.lastSeen = now;
+          localStorage.setItem(visitorKey, JSON.stringify(visitorData));
+          return visitorData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: LocalStorage not available');
+    }
+    
+    // Generate new visitor ID
+    var newVisitorId = 'zv_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      localStorage.setItem(visitorKey, JSON.stringify({
+        id: newVisitorId,
+        created: Date.now(),
+        lastSeen: Date.now()
+      }));
+    } catch (e) {
+      // Continue without local storage
+    }
+    
+    return newVisitorId;
+  }
+  
+  // Generate or retrieve session ID (30 minutes)
+  function getSessionId() {
+    var sessionKey = 'zappy_session_' + config.websiteId;
+    var session = null;
+    
+    try {
+      session = sessionStorage.getItem(sessionKey);
+      if (session) {
+        var sessionData = JSON.parse(session);
+        var now = Date.now();
+        
+        // Check if session is still valid
+        if (now - sessionData.timestamp < config.sessionDuration) {
+          // Update timestamp
+          sessionData.timestamp = now;
+          sessionStorage.setItem(sessionKey, JSON.stringify(sessionData));
+          return sessionData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: SessionStorage not available');
+    }
+    
+    // Generate new session ID
+    var newSessionId = 'zs_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      sessionStorage.setItem(sessionKey, JSON.stringify({
+        id: newSessionId,
+        timestamp: Date.now()
+      }));
+    } catch (e) {
+      // Continue without session storage
+    }
+    
+    return newSessionId;
+  }
+  
+  var visitorId = getVisitorId();
+  var sessionId = getSessionId();
+  
+  // Track an event
+  function trackEvent(eventType, data) {
+    data = data || {};
+    
+    var eventData = {
+      website_id: config.websiteId,
+      event_type: eventType,
+      page_path: window.location.pathname,
+      referrer: document.referrer || 'direct',
+      visitor_id: visitorId,
+      session_id: sessionId,
+      metadata: data
+    };
+    
+    // Use sendBeacon if available (better for page unload events)
+    if (navigator.sendBeacon) {
+      var blob = new Blob([JSON.stringify(eventData)], { type: 'application/json' });
+      navigator.sendBeacon(config.apiUrl, blob);
+    } else {
+      // Fallback to fetch
+      fetch(config.apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(eventData),
+        keepalive: true
+      }).catch(function(error) {
+        console.warn('Zappy Analytics: Failed to track event', error);
+      });
+    }
+  }
+  
+  // Track page view
+  if (config.trackPageViews) {
+    trackEvent('pageview', {
+      title: document.title,
+      url: window.location.href
+    });
+  }
+  
+  // Track clicks on important elements
+  if (config.trackClicks) {
+    document.addEventListener('click', function(e) {
+      var target = e.target;
+      
+      // Track button clicks (counted as actions)
+      if (target.tagName === 'BUTTON' || target.closest('button')) {
+        var button = target.tagName === 'BUTTON' ? target : target.closest('button');
+        trackEvent('click', {
+          element: 'button',
+          text: button.textContent.trim().substring(0, 100),
+          id: button.id || null,
+          class: button.className || null
+        });
+      }
+      
+      // Track link clicks (navigation - not counted as actions)
+      else if (target.tagName === 'A' || target.closest('a')) {
+        var link = target.tagName === 'A' ? target : target.closest('a');
+        trackEvent('navigation', {
+          element: 'link',
+          text: link.textContent.trim().substring(0, 100),
+          href: link.href,
+          external: link.hostname !== window.location.hostname
+        });
+      }
+    }, true);
+  }
+  
+  // Track form submissions
+  if (config.trackFormSubmissions) {
+    document.addEventListener('submit', function(e) {
+      var form = e.target;
+      
+      trackEvent('form_submit', {
+        form_id: form.id || null,
+        form_name: form.name || null,
+        form_action: form.action || null,
+        form_method: form.method || 'GET'
+      });
+    }, true);
+  }
+  
+  // Track time on page (send on page unload)
+  var pageLoadTime = Date.now();
+  
+  window.addEventListener('beforeunload', function() {
+    var timeOnPage = Math.floor((Date.now() - pageLoadTime) / 1000); // in seconds
+    
+    trackEvent('page_unload', {
+      time_on_page: timeOnPage,
+      page_path: window.location.pathname
+    });
+  });
+  
+  // Expose tracking function globally for custom events
+  window.zappyAnalytics = {
+    track: trackEvent,
+    getVisitorId: function() { return visitorId; },
+    getSessionId: function() { return sessionId; }
+  };
+  
+})();
+</script>
+<!-- End Zappy Analytics -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Zappy Attribution Header -->
+<div id="zappy-attribution-header" class="zappy-header" style="display: none;">
+  <p>Happily created by&nbsp;<a href="https://zappy5.com" target="_blank" rel="noopener noreferrer" class="zappy-link">Zappy</a></p>
+</div>
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <div class="nav-brand">
+        <a href="/" class="logo-link">
+          <img src="assets/logo.webp" alt="הגר בן דוד" class="logo" />
+        </a>
+      </div>
+      
+      <button class="mobile-toggle" id="mobileToggle" aria-label="תפריט">
+        <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+        <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;">
+          <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+      </button>
+      
+      <button class="phone-header-btn" aria-label="התקשרו אלינו">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+      </button>
+      
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/services">שירותים</a></li>
+        <li><a href="/about">אודות</a></li>
+      </ul>
+      
+      <div class="nav-cta-container">
+        <li class="nav-cta-item">
+          <a href="/contact" class="nav-cta-btn">צור קשר</a>
+        </li>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>הכירו את הגר בן דוד</h1>
+      <h3>דולה מנוסה ומדריכה מקצועית להכנה ללידה</h3>
+    </div>
+  </section>
+
+  <section class="about-story">
+    <div class="container">
+      <div class="story-content">
+        <h2>הסיפור שלי</h2>
+        <p>שמי הגר בן דוד, ואני דולה ומדריכה מוסמכת להכנה ללידה. הדרך שלי לתחום זה התחילה מתוך חוויה אישית עמוקה ורצון אמיתי לעזור לנשים ולזוגות לחוות את אחד הרגעים המשמעותיים ביותר בחייהם בצורה המיטבית והמעצימה ביותר.</p>
+        <p>לאורך השנים, ליוויתי עשרות זוגות בדרכם ללידה, וכל פעם מחדש אני מתרגשת מהזכות להיות חלק ממסע כל כך מיוחד. אני מאמינה שלידה היא לא רק אירוע פיזי, אלא חוויה רגשית, רוחנית ומשפחתית שצריכה להיות מלווה בתמיכה, הבנה ואהבה.</p>
+        <p>הגישה המקצועית שלי משלבת ידע עדכני מתחום הבריאות והלידה עם רגישות אישית וחמימות אנושית. אני מאמינה שכל זוג ייחודי, ולכן אני מתאימה את הליווי והכלים לצרכים הספציפיים של כל משפחה. המטרה שלי היא שתרגישו בטוחים, מוכנים ומעצימים לקראת הלידה שלכם.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="qualifications">
+    <div class="container">
+      <h2>הכשרה והסמכות</h2>
+      <div class="qual-grid">
+        <div class="qual-item">
+          <i class="fas fa-certificate"></i>
+          <h3>הסמכה כדולה מוסמכת</h3>
+          <p>סיימתי קורס הכשרה מקיף לדולות ומוסמכת על ידי ארגון דולות ישראל.</p>
+        </div>
+        <div class="qual-item">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>הכשרה להדרכת הכנה ללידה</h3>
+          <p>השתלמתי בקורסים מתקדמים להדרכת קורסי הכנה ללידה זוגיים.</p>
+        </div>
+        <div class="qual-item">
+          <i class="fas fa-book-reader"></i>
+          <h3>למידה מתמדת</h3>
+          <p>משתתפת בקביעות בהשתלמויות וסדנאות לעדכון ידע והרחבת כלים.</p>
+        </div>
+        <div class="qual-item">
+          <i class="fas fa-heart"></i>
+          <h3>ניסיון עשיר</h3>
+          <p>ליוויתי עשרות זוגות בהצלחה בדרכם ללידה מעצימה ובטוחה.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="philosophy">
+    <div class="container">
+      <h2>הפילוסופיה שלי</h2>
+      <div class="philosophy-content">
+        <div class="philosophy-item">
+          <h3>כל לידה היא ייחודית</h3>
+          <p>אני מאמינה שאין שתי לידות זהות, וכל זוג ראוי לליווי מותאם אישית שמכבד את הצרכים, הרצונות והחששות הייחודיים שלהם. הגישה שלי היא גמישה ומתאימה את עצמה לכם, ולא להיפך.</p>
+        </div>
+        <div class="philosophy-item">
+          <h3>העצמה ותמיכה</h3>
+          <p>המטרה שלי היא להעצים אתכם ולתת לכם את הכלים והביטחון להתמודד עם תהליך הלידה. אני מאמינה שכאשר אתם מרגישים בטוחים ונתמכים, אתם יכולים לחוות לידה מיטבית ומעצימה.</p>
+        </div>
+        <div class="philosophy-item">
+          <h3>שיתוף פעולה עם הצוות הרפואי</h3>
+          <p>אני רואה את עצמי כחלק משלים לצוות הרפואי, ולא כתחליף לו. המטרה שלי היא לעבוד יד ביד עם הרופאים והמיילדות כדי להבטיח את הטוב ביותר עבורכם.</p>
+        </div>
+        <div class="philosophy-item">
+          <h3>מעורבות בן הזוג</h3>
+          <p>אני מאמינה בחשיבות המעורבות של בן הזוג בתהליך. הקורסים והליווי שלי מיועדים לחזק את הקשר הזוגי ולהכין את שני בני הזוג יחד לקראת הרגע המיוחד.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="approach">
+    <div class="container">
+      <h2>הגישה המקצועית שלי</h2>
+      <p>הגישה שלי משלבת מספר מרכיבים חשובים שיוצרים יחד חוויה מקיפה ומעצימה:</p>
+      <div class="approach-grid">
+        <div class="approach-card">
+          <i class="fas fa-brain"></i>
+          <h3>ידע מקצועי</h3>
+          <p>ידע עדכני ומקיף בכל הנוגע להריון, לידה ותקופת הלידה, המבוסס על מחקרים ועדויות מדעיות.</p>
+        </div>
+        <div class="approach-card">
+          <i class="fas fa-hands-helping"></i>
+          <h3>כלים מעשיים</h3>
+          <p>מגוון רחב של כלים וטכניקות מעשיות להתמודדות עם כאב, הרפיה ונשימה שתוכלו להשתמש בהם בפועל.</p>
+        </div>
+        <div class="approach-card">
+          <i class="fas fa-heart-pulse"></i>
+          <h3>תמיכה רגשית</h3>
+          <p>ליווי רגשי צמוד ותמיכה מתמשכת שמסייעים לכם להרגיש בטוחים ונתמכים לאורך כל הדרך.</p>
+        </div>
+        <div class="approach-card">
+          <i class="fas fa-user-check"></i>
+          <h3>התאמה אישית</h3>
+          <p>כל תוכנית מותאמת אישית לצרכים, לרצונות ולמצב הספציפי שלכם, תוך גמישות ומענה מלא.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="values">
+    <div class="container">
+      <h2>הערכים שמנחים אותי</h2>
+      <div class="values-list">
+        <div class="value-item">
+          <div class="value-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="value-content">
+            <h3>בטיחות תמיד במקום הראשון</h3>
+            <p>בטיחות האם והתינוק היא תמיד בראש סדר העדיפויות. אני עובדת בשיתוף פעולה מלא עם הצוות הרפואי ומכבדת את הידע והניסיון שלהם.</p>
+          </div>
+        </div>
+        <div class="value-item">
+          <div class="value-icon">
+            <i class="fas fa-user-shield"></i>
+          </div>
+          <div class="value-content">
+            <h3>כבוד לבחירות שלכם</h3>
+            <p>אני מכבדת את הבחירות והרצונות שלכם ועובדת כדי לתמוך בהם, תוך מתן מידע מקיף שיאפשר לכם לקבל החלטות מושכלות.</p>
+          </div>
+        </div>
+        <div class="value-item">
+          <div class="value-icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <div class="value-content">
+            <h3>שקיפות ואמינות</h3>
+            <p>אני מאמינה בתקשורת פתוחה וכנה. תמיד אדבר איתכם בכנות ואתן לכם מידע מלא ומדויק.</p>
+          </div>
+        </div>
+        <div class="value-item">
+          <div class="value-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <div class="value-content">
+            <h3>זמינות ומחויבות</h3>
+            <p>אני מחויבת לתת לכם את מלוא תשומת הלב והזמינות שאתם צריכים, ולהיות לצדכם בכל שלב של הדרך.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-work">
+    <div class="container">
+      <h2>למה לעבוד איתי?</h2>
+      <div class="why-content">
+        <p>בחירת דולה או מדריכה להכנה ללידה היא החלטה חשובה, ואני מבינה שאתם רוצים למצוא את האדם המתאים ביותר עבורכם. הנה כמה סיבות למה זוגות בוחרים לעבוד איתי:</p>
+        <ul class="why-list">
+          <li><i class="fas fa-check-circle"></i> <strong>ניסיון מוכח:</strong> ליוויתי עשרות זוגות בהצלחה והצלחתי לעזור להם להגיע ללידה מעצימה ובטוחה.</li>
+          <li><i class="fas fa-check-circle"></i> <strong>גישה אישית:</strong> כל זוג מקבל התייחסות אישית מלאה ותוכנית מותאמת במיוחד עבורו.</li>
+          <li><i class="fas fa-check-circle"></i> <strong>זמינות:</strong> אני זמינה לשאלות, לתמיכה ולייעוץ לאורך כל התהליך.</li>
+          <li><i class="fas fa-check-circle"></i> <strong>שילוב של מקצועיות וחמימות:</strong> אני משלבת ידע מקצועי עם גישה אנושית, חמה ותומכת.</li>
+          <li><i class="fas fa-check-circle"></i> <strong>מגוון שירותים:</strong> אני מציעה מגוון רחב של שירותים שיכולים להתאים לצרכים שונים.</li>
+          <li><i class="fas fa-check-circle"></i> <strong>המלצות חמות:</strong> זוגות שעבדו איתי ממליצים בחום על השירותים שלי.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <h2>מה אומרים עליי</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"הגר בן דוד היא דולה מדהימה. היא הייתה לצידנו לאורך כל הדרך, מההריון ועד לאחר הלידה. הליווי שלה עזר לנו להרגיש בטוחים ומוכנים, והיא נתנה לנו כלים שהיו חיוניים במהלך הלידה. ממליצים בחום!"</p>
+          </div>
+          <div class="testimonial-author">
+            <strong>שרה ויוסי כהן</strong>
+            <span>תל אביב</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"קורס ההכנה ללידה הזוגי עם הגר היה חוויה מעצימה. למדנו המון, קיבלנו כלים מעשיים והרגשנו שאנחנו באמת מוכנים. הגר היא מקצועית, חמה ותומכת. תודה רבה!"</p>
+          </div>
+          <div class="testimonial-author">
+            <strong>מיכל ודניאל לוי</strong>
+            <span>ירושלים</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"הליווי של הגר בן דוד במהלך הלידה היה משמעותי מאוד. היא הייתה שם בשבילנו בכל רגע, נתנה תמיכה רגשית ופיזית, ועזרה לנו להתמודד עם האתגרים. אנחנו אסירי תודה על הנוכחות והתמיכה שלה."</p>
+          </div>
+          <div class="testimonial-author">
+            <strong>רונית ואבי אברהם</strong>
+            <span>חיפה</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>בואו נתחיל את המסע יחד</h2>
+      <p>אשמח לשמוע עליכם ולהכיר אתכם. צרו קשר לשיחת היכרות ראשונית</p>
+      <a href="/contact" class="btn-primary">צרו קשר</a>
+    </div>
+  </section>
+
+  <a href="https://wa.me/[whatsapp_handle]" target="_blank" class="whatsapp-float" aria-label="WhatsApp" rel="noopener noreferrer">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  
+    <!-- Legal Footer -->
+    <footer class="legal-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="all-rights-reserved">
+            <p>© 2025 הגר בן דוד. כל הזכויות שמורות.</p>
+          </div>
+          <div class="footer-social"><a href="https://facebook.com/[facebook_handle]" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+<a href="https://instagram.com/[instagram_handle]" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+<a href="https://wa.me/[whatsapp_handle]" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div>
+          <div class="footer-legal">
+            <a href="privacy.html" aria-label="מדיניות פרטיות">
+              מדיניות פרטיות
+            </a>
+            <span class="separator">|</span>
+            <a href="accessibility.html" aria-label="נגישות">
+              נגישות
+            </a>
+            <span class="separator">|</span>
+            <a href="terms.html" aria-label="תנאי שימוש">
+              תנאי שימוש
+            </a>
+          </div>
+        </div>
+        <div class="zappy-attribution">
+          <p>נוצר באמצעות <a href="https://zappy5.com" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Zappy</a></p>
+        </div>
+      </div>
+    </footer>
+
+
+<!-- Zappy Attribution Header Script -->
+<script>
+(function() {
+  var websiteId = 'f7adccbb-8577-45c1-a1fc-1da165399550';
+  
+  // Don't show header in preview mode
+  var currentUrl = window.location.href;
+  var isPreview = currentUrl.includes('/preview/') || 
+                  currentUrl.includes('/preview-fullscreen/') || 
+                  currentUrl.includes('localhost:5001') ||
+                  currentUrl.includes('localhost:3000');
+  
+  if (isPreview) {
+    return; // Exit early in preview mode
+  }
+  
+  fetch('https://api.zappy5.com/api/website/' + websiteId + '/tier')
+    .then(function(response) { return response.json(); })
+    .then(function(data) {
+      if (data.showAttribution) {
+        var header = document.getElementById('zappy-attribution-header');
+        if (header) {
+          header.style.display = 'block';
+        }
+      }
+    })
+    .catch(function(error) {
+      console.error('Failed to check tier:', error);
+    });
+})();
+</script>
+    <div data-integration="accessibility:toolbar"></div>
+    <script src="script.js"></script>
+</body></html>
