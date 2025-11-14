@@ -93,15 +93,18 @@ img {
 }
 
 :root {
-  --primary-color: #d4a5a5;
-  --secondary-color: #f5e6e8;
-  --accent-color: #c78d8d;
-  --text-color: #1a1a1a;
+--primary-color: #E04866;
+  --secondary-color: #86A5D2;
+  --accent-color: #CE5970;
+  --text-color: #4a4a4a;
   --light-text: #ffffff;
   --bg-white: #ffffff;
   --shadow: 0 4px 12px rgba(0,0,0,0.1);
   --nav-color: #1a1a1a;
-  --nav-hover-color: #d4a5a5;
+  --nav-hover-color: #CE5970;
+  --background-color: #FFFFFF;
+  --surface-color: #F3DDE4;
+  --text-secondary-color: #8c8c8c;
 }
 
 .container {
@@ -251,7 +254,7 @@ section {
 
 .nav-cta-btn {
   background: var(--primary-color);
-  color: #ffffff;
+  color: #1a1a1a;
   padding: 10px 24px;
   border-radius: 6px;
   text-decoration: none;
@@ -667,7 +670,7 @@ section {
 .form-group select,
 .form-group textarea {
   padding: 12px 16px;
-  border: 2px solid #e0e0e0;
+  border: 2px solid #F3DDE4;
   border-radius: 6px;
   font-size: 16px;
   font-family: 'Rubik', 'Noto Sans Hebrew', Arial, sans-serif;
@@ -736,7 +739,7 @@ section {
 .availability {
   margin-top: 2rem;
   padding-top: 2rem;
-  border-top: 2px solid #e0e0e0;
+  border-top: 2px solid #F3DDE4;
 }
 
 .faq-grid {
@@ -844,7 +847,7 @@ section {
     font-size: 24px;
     z-index: 1000;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    background: #25d366;
+    background: #86A5D2;
     color: white;
     text-decoration: none;
   }
@@ -948,7 +951,7 @@ img, picture, figure {
 
     /* Legal Footer Styles - Header Colors */
     .legal-footer {
-      background-color: #f2f2f2;
+      background-color: #F3DDE4;
       color: #1a1a1a;
       padding: 20px 0;
       font-size: 16px;
@@ -1165,7 +1168,7 @@ img, picture, figure {
 /* Cookie Consent Customizations */
 :root {
   --cc-btn-primary-bg: #3b82f6;
-  --cc-btn-primary-border: #3b82f6;
+  --cc-btn-primary-border: #E04866;
   --cc-btn-primary-hover-bg: #2269dd;
 }
 
@@ -1332,9 +1335,9 @@ img, picture, figure {
 #mic-access-tool-general-button svg line,
 #mic-access-tool-general-button svg polyline,
 #mic-access-tool-general-button svg g {
-  fill: #f2f2f2 !important;
-  stroke: #f2f2f2 !important;
-  color: #f2f2f2 !important;
+  fill: #F3DDE4 !important;
+  stroke: #F3DDE4 !important;
+  color: #F3DDE4 !important;
 }
 
 /* Target images if the icon is an img instead of SVG */
@@ -1355,7 +1358,7 @@ img, picture, figure {
 .mic-access-tool-box-header,
 div[id*="mic-access-tool-box"] header,
 div[id*="mic-access-tool-box"] .header {
-  background: #f2f2f2 !important;
+  background: #F3DDE4 !important;
   color: white !important;
 }
 
@@ -1382,8 +1385,8 @@ div[id*="mic-access-tool-box"] .header * {
 #mic-access-tool-box button:hover,
 div[id*="mic-access-tool-box"] button.active,
 div[id*="mic-access-tool-box"] button:hover {
-  border-color: #f2f2f2 !important;
-  color: #f2f2f2 !important;
+  border-color: #F3DDE4 !important;
+  color: #F3DDE4 !important;
   background-color: rgba(242, 242, 242, 0.1) !important;
 }
 
@@ -1392,7 +1395,7 @@ div[id*="mic-access-tool-box"] button:hover {
 #mic-access-tool-box button[title*="Reset"],
 #mic-access-tool-box [class*="reset"],
 div[id*="mic-access-tool-box"] button[class*="reset"] {
-  background: #f2f2f2 !important;
+  background: #F3DDE4 !important;
   color: white !important;
 }
 
